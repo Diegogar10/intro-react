@@ -1,0 +1,70 @@
+.tarea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    margin: 10px;
+    border-radius: 25px;
+    color: var(--color-primario);
+    width: 60%;
+    height: 85px;
+    min-width: 250px;
+    background-color: var(--color-secundario);
+    box-shadow: var(--color-secundario) 0px 0px 5px 1px;
+}
+
+
+.tarea-completed {
+    background-color: var(--color-terceario);
+    color: var(--color-text);
+}
+
+
+.tarea-completed > p{
+    text-decoration: line-through;
+    
+}
+
+.tarea:hover {
+    box-shadow: var(--color-secundario) 0px 0px 10px 2px;
+    
+}
+
+.tarea-completed:hover {
+    box-shadow: var(--color-secundario) 0px 0px 5px 1px;
+}
+
+.tarea__close {
+    display: grid;
+    place-content: center;
+    width: 50px;
+    height: 50px;
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+.tarea__close:hover {
+    color: rgb(255, 124, 119);
+    cursor: pointer;
+}
+
+span svg{
+    width: 30px;
+    height: 30px;
+    font-weight: bold;
+    margin: 10px;
+    fill: var(--color-primario);
+}
+
+.tarea__check-completed svg {
+    fill: var(--color-secundario);
+}
+
+span svg:hover {
+    fill: #757575;
+    cursor: pointer;
+}
+
+.tarea__check-completed svg:hover {
+    fill: var(--color-secundario);
+}
